@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #80b9f0;
+}
+
+.app {
+  background-color: #d6ea64;
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 400px;
+  width: 100%; 
+  max-width: 700px; 
+  margin: 0 auto;
+  position: relative; 
+}
+
+
+.app h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-card.completed {
+  background-color: #e0e0e0;
+  text-decoration: line-through;
+}
+
+.todo-card:hover {
+  background-color: #e0e0e0;
+}
+
+.todo-card button {
+  background-color: transparent;
+  border: none;
+  color: #ff6347;
+  cursor: pointer;
+}
+
+.todo-card button:hover {
+  text-decoration: underline;
+}
+
+.reset-button:hover {
+  background-color: #ff4737;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.reset-button {
+  background-color: #ff6347;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  position: absolute; 
+  top: 10px; 
+  right: 10px;
+}
